@@ -13,9 +13,6 @@ export class UsersComponent implements OnInit {
   @Input() password: string = "";
   data = null;
   constructor(private user: UsersService) {
-    console.log("-----------------------------")
-    console.log(user.getUsers().subscribe());
-    console.log("-----------------------------")
     user.getUsers().subscribe(
       data => {
         this.data = data;

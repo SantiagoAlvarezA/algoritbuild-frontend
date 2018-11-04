@@ -9,15 +9,20 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { UsersService } from './services/users.service';
 import { UsersComponent } from './components/users/users.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
   { path: 'user', component: UsersComponent },
+  { path: 'login', component: LoginComponent },
 ];
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

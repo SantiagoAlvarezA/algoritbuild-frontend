@@ -1,0 +1,42 @@
+<div class="col-6 offset-3 mt-4  ">
+    <div class="card shadow-lg  mb-4 bg-white">
+        <div class="card-header text-center bg-primary">
+            <h2>REGISTRAR USUARIO</h2>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label>N° Documento</label>
+                <input type="text" class="form-control" [(ngModel)]="document" placeholder="Ingresar su documento">
+            </div>
+            <div class="form-group">
+                <label>Nombres y apellidos</label>
+                <input type="text" class="form-control" [(ngModel)]="name" placeholder="Ingresar sus nombres y apellidos">
+            </div>
+            <div class="form-group">
+                <label>Seleccione su programa</label>
+                <select class="form-control">
+                  <option>Ingenienría de sistemas</option>
+                  <option>Ingenienría electronica</option>
+                  <option>Ingenienría quimica</option>
+                  <option>Ingenienría espacial</option>
+                  <option>Ingenienría ambiental</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Seleccione el semestre al que pertenese</label>
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="card-footer ">
+            <button class="btn btn-primary btn-block" (click)="saveUser()">Registrarse</button>
+
+        </div>
+    </div>
+</div>

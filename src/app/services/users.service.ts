@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class UsersService {
 
-  readonly URL_API = 'http://localhost:3000/api/users/';
+  readonly URL_API = 'http://localhost:3000/api/persons/';
 
   selectedUser:Users;
   users:Users[];

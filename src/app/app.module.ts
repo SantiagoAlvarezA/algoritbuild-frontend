@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { UsersService } from './services/users.service';
+import { PersonService } from './services/persons.service';
 import { UsersComponent } from './components/users/users.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
@@ -33,7 +33,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [UsersService],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

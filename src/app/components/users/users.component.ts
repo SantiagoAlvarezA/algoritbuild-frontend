@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UsersService } from 'src/app/services/users.service';
+import { PersonService } from 'src/app/services/persons.service';
 import { NgForm } from '@angular/forms';
 
 
@@ -12,8 +12,8 @@ export class UsersComponent implements OnInit {
   @Input() name: string = "";
   @Input() password: string = "";
   data = null;
-  constructor(private user: UsersService) {
-    user.getUsers().subscribe(
+  constructor(private person: PersonService) {
+    person.getPersons().subscribe(
       data => {
         this.data = data;
       }

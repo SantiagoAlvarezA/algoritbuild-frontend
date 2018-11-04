@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UsersService } from 'src/app/services/users.service';
+import { PersonService } from 'src/app/services/persons.service';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   @Input() lastname:string = "";
   @Input() profetion:string = "";
 
-  constructor(private user:UsersService) { }
+  constructor(private person:PersonService) { }
 
   ngOnInit() {
   }
